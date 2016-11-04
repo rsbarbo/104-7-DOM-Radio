@@ -67,21 +67,28 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
   @import url("https://www.denveropenmedia.org/sites/all/themes/minim/css/media-queries.css?oemvs6");
   </style>
 
-</head>
-<body class="html front not-logged-in no-sidebars page-show-list add-featured-image-padding-blocks" >
+  <!-- Import stylesheet for dropzone -->
+  <style type="text/css" media="all">
+  @import url('https://raw.githubusercontent.com/enyo/dropzone/master/dist/dropzone.css');
+  </style>
 
+  <!-- Personalized Stylesheet for Index page -->
+  <link rel="stylesheet" href="./assets/stylesheets/index.css" media="screen" title="no title">
+</head>
+
+<body class="html front not-logged-in no-sidebars page-show-list add-featured-image-padding-blocks" >
   <div id="page">
     <header id="header" role="banner">
       <div class="region region-header clearfix">
-
         <div id="block-search-form" class="block block-search" >
-          <form action="/?gclid=CjwKEAjw-uDABRDPz4-0tp6T6lMSJADNoyPb_y08p0anyjeRiAK8daMVuOa2Xcr0sin2V_Hox7jupRoCc6_w_wcB" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+          <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
             <h2 class="element-invisible">Search form</h2>
             <div class="form-item form-type-textfield form-item-search-block-form">
               <label class="element-invisible" for="edit-search-block-form--2">Search </label>
               <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
             </div>
-            <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-FqRnoly8P_-dd8pIW1TQldmDHcpWAILYFgm1jWnsj1I" />
+
+            <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-1b7iJ1aEekVQgsPNMwku1ENNx0S9e_l3NB4fZ2CevQg" />
             <input type="hidden" name="form_id" value="search_block_form" />
             <input type="hidden" name="field_old_project_id" value="" />
           </div>
