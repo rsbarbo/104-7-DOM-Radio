@@ -166,18 +166,15 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
       </li>
     </ul>
   </div>
-
 </div>
+
 <div id="block-system-main-menu" class="block block-system block-menu om-navigation-menu clearfix" >
   <ul class="menu"><li class="first leaf"><a href="/" title="" class="active">Home</a></li>
-    <li class="expanded"><ul class="menu"><li class="first leaf"><a href="/schedule" title="">TV Schedules</a></li>
-      <li class="leaf"><a href="/channel-56-live-stream">Ch 56 Live Stream</a></li>
-      <li class="leaf"><a href="/livestream_57">Ch 57 Live Stream</a></li>
-      <li class="leaf"><a href="http://tunein.com/radio/KOMF-LP-1047-s271918/" title="">104.7FM Live Stream</a></li>
-    </ul></li>
-    <li class="expanded"><a href="https://www.denveropenmedia.org/membership" title="">Membership</a><ul class="menu"><li class="first leaf"><a href="https://www.denveropenmedia.org/membership" title="">Become a Member</a></li>
-      <li class="leaf"><a href="https://www.denveropenmedia.org/membership-and-content-agreement">Membership and Content Agreement</a></li>
-      <li class="last leaf"><a href="https://www.denveropenmedia.org/nonprofit-membership-grant" target="_blank">Nonprofit Membership Grant</a></li>
+    <li><a href="http://tunein.com/radio/KOMF-LP-1047-s271918/" title="" class="active" target="_blank">Live Stream 104.7</a><ul class="menu"></li>
+    </ul>
+    <li class="expanded"><a href="https://www.denveropenmedia.org/membership" title="" target="_blank">Membership</a><ul class="menu" target="_blank"><li class="first leaf"><a href="https://www.denveropenmedia.org/membership" title="" target="_blank">Become a Member</a></li>
+      <li class="leaf"><a href="https://www.denveropenmedia.org/membership-and-content-agreement" target="_blank">Membership and Content Agreement</a></li>
+      <li class="last leaf"><a href="http://openmediafoundation.org/grants/grant-scholarship-applications/nonprofit-member-grant" target="_blank">Nonprofit Membership Grant</a></li>
     </ul></li>
     <li class="leaf om-menu-donate"><a href="/donate">Donate</a></li>
     <li class="last expanded om-menu-about"><a href="/about" title="Click here for a DOM Overview">About</a><ul class="menu"><li class="first leaf"><a href="/vision-open-media" title="Click here to read the vision of open media">The Vision</a></li>
@@ -188,8 +185,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
     </ul></li>
   </ul>
 </div>
-
 </div><!--#region-header-->
+
 <div class="region region-featured clearfix">
   <div id="block-om-blocks-om-featured-image" class="block block-om-blocks" >
     <div class="om-featured-caption">
@@ -199,54 +196,221 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
     </div>
     <div class="video-wrapper-homepage">
       <video style="width: 100% !important;  display: block;" preload="none" id="bgvid" autoplay="" loop="">
-        <source src="/sites/all/modules/custom/om_blocks/includes/DOM_SitePromo_FINAL.mp4" type="video/mp4">
+        <source src="assets/Videos/dom_homepage_video.mp4" type="video/mp4">
         </video>
       </div>
       <div class="om-featured-image image-shrink">
         <img src="/sites/all/themes/minim/images/Top-image-home-page.jpg">
       </div>
-
-
     </div>
     <div id="block-om-blocks-om-logo" class="block block-om-blocks" >
       <a href="/"><img typeof="foaf:Image" src="assets/images/DOM-logo-banner.svg" alt="" /></a>
     </div>
+
+    <!-- DropZone File Input -->
+    <div class="dropfile" id="MP3-Upload">
+      <h1>Drop your MP3 File here:</h1>
+      <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+    </div>
+
     <div id="block-om-blocks-om-above-content" class="block block-om-blocks" >
-      <div class="text-center become-a-member clearfix">
-        <a href="https://www.denveropenmedia.org/membership">
+      <div class="become-a-member clearfix">
+        <a href="/membership">
           <div class="co-1"></div>
           <div><span>BECOME A MEMBER</span>Access studios & equipment <br/>to create content for TV and radio. </div>
+        </a>
+        <a href="/classes">
+          <div class="co-2"></div>
+          <div><span>TAKE CLASSES</span>Get trained in cutting-edge media <br/>studios, equipment, and software. </div>
+        </a>
+        <a href="/equipment">
+          <div class="co-3"></div>
+          <div><span>RENT EQUIPMENT/FACILITIES</span>Rent state-of-the-art equipment <br/>& facilities for your media projects. </div>
+        </a>
+        <a href="/#watch/vote">
+          <div class="co-4"></div>
+          <div><span>WATCH, LISTEN AND VOTE</span>Denver's only TV & Radio stations <br/> created and programmed by you!<br/> More votes = more air time. </div>
         </a>
       </div>
     </div>
   </div><!--#region-featured-->
 </header>
 
-<!-- all the nodes were replace with links to the original webpage on DOM -->
-<!-- ideally it should be placed back to the nodes -->
+<div id="main">
+  <a id="main-content"></a>
+  <div class="om-relative-side-content clearfix">
+    <div class="content-sider-wrapper clearfix">
+      <div class="region region-content clearfix">
+        <div id="block-om-blocks-om-above-grid-view" class="block block-om-blocks" >
+          <div id="watch/vote" class="om-above-grid-view">
+            <div class="om-above-grid-view-title">
+              WATCH, LISTEN AND VOTE TO CHOOSE WHAT AIRS
+            </div>
+            <div class="om-above-grid-view-body">
+              At Denver Open Media, you decide what plays on TV and radio. Every show is guaranteed
+              broadcast on our Community Channel (Comcast 56, CenturyLink 8008/8508HD), but viewers decide
+              what content airs on our Best-Of and HD Channel (Comcast 57/881HD, CenturyLink 8009/8509HD) by
+              voting for their favorite shows. All shows are guaranteed broadcast on KOMF 104.7, but
+              listeners vote to determine which shows get more play on the air waves.
+            </div>
+          </div>
+        </div>
+        <div id="block-system-main" class="block block-system" >
+          <div id="show-list"></div>
+        </div>
+      </div><!--#region-content-->
+    </div><!-- /#content-sider-wrapper -->
+  </div>
+</div><!-- /#main -->
+
+<div class="region region-above-footer clearfix">
+  <div id="block-views-front-page-news-block" class="block block-views" >
+    <h2>News &amp; Events</h2>
+    <div class="view view-front-page-news view-id-front_page_news view-display-id-block view-dom-id-e40cf0cc7715823444cbeab08a6bb1bf">
+      <div class="view-content clearfix">
+        <div class='views-row views-row-1 views-row-odd views-row-first'><div class="om-front-page-news">
+          <a href="node/249981">
+            <div class="pod-outer">
+              <div class="pod-inner">
+                <div class="om-view-image">
+                  <img typeof="foaf:Image" src="https://www.denveropenmedia.org/sites/default/files/styles/290x165/public/news_images/IMG_0829-Web%20%281%29.jpg?itok=MQwlTI__" width="290" height="165" alt="" />
+                </div>
+                <div class="om-view-title">
+                  OMF Seeking New Director of Operations
+                </div>
+                <div class="om-view-time">
+                  posted November 3th
+                </div>
+                <div class ="om-view-content">
+                  &#13;
+                  Letter from Executive Director, Tony Shawcross&#13;
+                  &#13;
+                  &#13;
+                  November 2, 2016&#13;
+                  &#13;
+                  &#13;
+                  When a small group of us started OMF over a dozen years ago, none of us set out to be managers. In fact, we started as a collective. No one had a title or received a salary. We shared the resources of the collective, and donated 10% of any revenues we generated to the no
+                </div>
+                <div class="om-view-read-more">
+                  Read More
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class='views-row views-row-2 views-row-even'><div class="om-front-page-news">
+        <a href="node/249931">
+          <div class="pod-outer">
+            <div class="pod-inner">
+              <div class="om-view-image">
+                <img typeof="foaf:Image" src="https://www.denveropenmedia.org/sites/default/files/styles/290x165/public/news_images/OMS-NOV16_1.jpg?itok=WPWoLuRp" width="290" height="165" alt="" />
+              </div>
+              <div class="om-view-title">
+                Open Music Sessions November | With Hang Rounders!
+              </div>
+              <div class="om-view-time">
+                posted October 25th
+              </div>
+              <div class ="om-view-content">
+                &#13;
+                Join us for this month's Open Music Sessions, our First Friday Celebration!&#13;
+                &#13;
+                Local Music - Local Comedy - Local Food - Local Fun&#13;
+                &#13;
+                ALL ARE WELCOME!&#13;
+                &#13;
+                Featuring Hang Rounders, best Honky Tonk in town! So shine up your boots, grab your best old lady and kick some up some dust. Plus, to open the show we have the hilarious stylings of
+              </div>
+              <div class="om-view-read-more">
+                Read More
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class='views-row views-row-3 views-row-odd views-row-last'><div class="om-front-page-news">
+      <a href="node/249696">
+        <div class="pod-outer">
+          <div class="pod-inner">
+            <div class="om-view-image">
+              <img typeof="foaf:Image" src="https://www.denveropenmedia.org/sites/default/files/styles/290x165/public/news_images/white-house-860x430.jpeg?itok=Rvzim8Mx" width="290" height="165" alt="" />
+            </div>
+            <div class="om-view-title">
+              Open Media Project: Increasing Civic Engagement Th...
+            </div>
+            <div class="om-view-time">
+              posted September 9th
+            </div>
+            <div class ="om-view-content">
+              &#13;
+              Check out this interview with OMF Executive Director, Tony Shawcross talking about our innovative platform, Open Media Project (OMP) for Government: an online transparency portal enabling governments to upload, tag and archive video of all proceedings.  &#13;
+              &#13;
+              &#13;
+              Interview by Fast Forward, nonprofit technology accelerator progra
+            </div>
+            <div class="om-view-read-more">
+              Read More
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div id="block-om-blocks-om-above-footer-image" class="block block-om-blocks relative" >
+  <div class="om-above-footer-image-class image-shrink">
+    <img src="/sites/all/themes/minim/images/above-footer-image.png">
+  </div>
+</div>
+
+<div id="block-om-blocks-om-channel" class="block block-om-blocks" >
+  <div class="above-footer-channel">
+    <div class="above-footer-channel-tv">
+      <div><img src="/sites/all/themes/minim/images/tv-icon-footer.svg"></div>
+      <div class="channel-tv">COMCAST TV<br/><div class="float-right">CHANNELS</div></div>
+      <div class="channel-number">
+        <a href="/channel-56-live-stream"><div class="channel-56"></div></a>
+        <a href="/livestream_57"><div class="channel-57"></div></a>
+        <a href="/schedule/219"><div class="channel-219"></div></a></div>
+      </div>
+      <div class="above-footer-channel-radio">
+        <div><img src="/sites/all/themes/minim/images/radio-icon-footer.svg"></div>
+        <div class="channel-radio">RADIO</div>
+        <div class="channel-radio-number"><a href="/denver-open-media-1047fm"><div class="channel-104"></div></a></div>
+      </div>
+    </div>
+  </div>
+</div><!--#region-above-footer-->
+
 <div class="region region-footer clearfix">
   <div id="block-om-blocks-om-footer" class="block block-om-blocks" >
     <div class="footer-block-om clearfix">
       <div class="column-1">
         <div class="footer-title">About Us:</div>
-        <a href="https://www.denveropenmedia.org/node/30330">Partners</a><br/>
-        <a href="https://www.denveropenmedia.org/node/30343">Policies</a><br/>
-        <a href="https://www.denveropenmedia.org/node/30343">Press</a><br/>
-        <a href="https://www.denveropenmedia.org/node/30341">Staff</a><br/>
+        <a href="/node/30330">Partners</a><br/>
+        <a href="/node/30343">Policies</a><br/>
+        <a href="/node/30343">Press</a><br/>
+        <a href="/node/30341">Staff</a><br/>
         <a href="http://openmediafoundation.org/about/careers" target="blank">Work with Us</a><br/>
-        <a href="https://www.denveropenmedia.org/node/30342">Report a Problem</a><br/>
+        <a href="/node/30342">Report a Problem</a><br/>
       </div>
       <div class="column-2">
         <div class="footer-title">Studio Location:</div>
-        <a href="https://www.denveropenmedia.org/node/105">700 Kalamath St.<br/>Denver, CO 80204</a><br/>
-        <a href="https://www.denveropenmedia.org/node/105">Map</a><br/>
+        <a href="/node/105">700 Kalamath St.<br/>Denver, CO 80204</a><br/>
+        <a href="/node/105">Map</a><br/>
         <div class="footer-title margin-top-40">Hour of Operation:</div>
         Tuesday-Friday: 1pm-8:30pm<br/>
         Saturdays: 11-6pm
       </div>
       <div class="column-3">
         <div class="footer-title">Connect with us:</div>
-        <a href="https://www.denveropenmedia.org/node/31122">Take a tour</a><br/>
+        <a href="/node/31122">Take a tour</a><br/>
         <a href="http://omfound.org/education/education-resources/youth-media" target="blank">Join the Youth Group</a><br/>
         <div class="footer-title margin-top-30">Follow us:</div>
         <div class="footer-icons clearfix">
@@ -322,12 +486,13 @@ var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1666649-1"]);_gaq.push(["_tr
 <script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/themes/minim/js/drop_menu.js?oemvs6"></script>
 <script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/themes/minim/js/mmenu.js?oemvs6"></script>
 <script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/themes/minim/js/search.js?oemvs6"></script>
+<script type="text/javascript" src="./assets/javacripts/dropzone.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"minim","theme_token":"R_mq228L3gaQCL9VAjjzTn3-chLo-Encn4V3hBAGPts","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.bgiframe.min.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.hoverIntent.minified.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/libraries\/jquery-hoverIntent\/jquery.hoverIntent.js":1,"sites\/all\/libraries\/menu-drops\/jquery.menu-drops.js":1,"https:\/\/use.typekit.net\/qgf2hec.js":1,"sites\/all\/libraries\/Typekit\/typekit.js":1,"sites\/all\/libraries\/jQuery.mmenu-master\/dist\/js\/jquery.mmenu.min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/minim\/js\/dist\/show-list.bundle.js":1,"sites\/all\/themes\/minim\/js\/drop_menu.js":1,"sites\/all\/themes\/minim\/js\/mmenu.js":1,"sites\/all\/themes\/minim\/js\/search.js":1}},"nice_menus_options":{"delay":800,"speed":"slow"},"commerce_reservations":{"staff":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"urlIsAjaxTrusted":{"\/?gclid=CjwKEAjw-uDABRDPz4-0tp6T6lMSJADNoyPb_y08p0anyjeRiAK8daMVuOa2Xcr0sin2V_Hox7jupRoCc6_w_wcB":true}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"minim","theme_token":"POwJfw3HRNNKxakpF_vdE4k1oTqPROyEPi7kVYBsEM0","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.bgiframe.min.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.hoverIntent.minified.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/libraries\/jquery-hoverIntent\/jquery.hoverIntent.js":1,"sites\/all\/libraries\/menu-drops\/jquery.menu-drops.js":1,"https:\/\/use.typekit.net\/qgf2hec.js":1,"sites\/all\/libraries\/Typekit\/typekit.js":1,"sites\/all\/libraries\/jQuery.mmenu-master\/dist\/js\/jquery.mmenu.min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/minim\/js\/dist\/show-list.bundle.js":1,"sites\/all\/themes\/minim\/js\/drop_menu.js":1,"sites\/all\/themes\/minim\/js\/mmenu.js":1,"sites\/all\/themes\/minim\/js\/search.js":1}},"nice_menus_options":{"delay":800,"speed":"slow"},"commerce_reservations":{"staff":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"urlIsAjaxTrusted":{"\/":true}});
 //--><!]]>
 </script>
 
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a1b9d408b0","applicationID":"1620899","transactionName":"NQABYEFZXBFSWhVeXQxKIldHUV0MHFYMaEEKChRrX1FBFg==","queueTime":0,"applicationTime":702,"atts":"GUcCFglDTx8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a1b9d408b0","applicationID":"1620899","transactionName":"NQABYEFZXBFSWhVeXQxKNkZaFx0LXV0ETxwSDRM=","queueTime":0,"applicationTime":24,"atts":"GUcCFglDTx8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
