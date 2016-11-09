@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Upload Your Song</title>
+  <link rel="stylesheet" href="./assets/stylesheets/index.css" media="screen" title="no title">
+  <link rel="stylesheet" href="assets/stylesheets/materialize.css" media="screen" title="no title">
+  <link rel="stylesheet" href="assets/stylesheets/materialize.min.css" media="screen" title="no title">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- Upload file -->
+  <div id="block-om-blocks-om-above-content" class="block block-om-blocks" >
+    <form action="/ajax-upload" id="ajax-attachment-upload-form">
+      <div class="form-update" id="form-update">
+        <h5>Upload Your Song Here:</h5>
+        <input type="file" name="attachment" id="attachment" multiple />
+        <input type="text" name="album" placeholder="album" value="">
+        <input type="text" name="title" placeholder="title" value="">
+        <input type="text" name="artist" placeholder="artist" value="">
+        <input type="text" name="genre" placeholder="genre" value="">
+        <input type="text" name="email" placeholder="email" value="">
+        <!-- <input type="submit" value="Upload" /> -->
+        <button class="btn waves-effect red darken-4" type="submit" name="action" value="Upload">Submit</button>
+      </div>
+    </form>
+    <ul id="file-listing"></ul>
+  </div>
+</body>
+</html>
