@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Upload Your Song</title>
+  <link rel="stylesheet" href="./assets/stylesheets/index.css" media="screen" title="no title">
+  <link rel="stylesheet" href="assets/stylesheets/materialize.css" media="screen" title="no title">
+  <link rel="stylesheet" href="assets/stylesheets/materialize.min.css" media="screen" title="no title">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- Upload file -->
+  <div id="block-om-blocks-om-above-content" class="block block-om-blocks" >
+    <form action="/ajax-upload" id="ajax-attachment-upload-form">
+      <div class="form-update" id="form-update">
+        <h5>Upload Your Song Here:</h5>
+        <input type="file" name="attachment" id="attachment" multiple />
+        <input type="text" name="album" placeholder="album" value="">
+        <input type="text" name="title" placeholder="title" value="">
+        <input type="text" name="artist" placeholder="artist" value="">
+        <input type="text" name="genre" placeholder="genre" value="">
+        <input type="text" name="email" placeholder="email" value="">
+        <!-- <input type="submit" value="Upload" /> -->
+        <button class="btn waves-effect red darken-4" type="submit" name="action" value="Upload">Submit</button>
+      </div>
+    </form>
+    <ul id="file-listing"></ul>
+  </div>
+</body>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/misc/drupal.js?oemvs6"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/modules/contrib/nice_menus/js/jquery.bgiframe.min.js?v=2.1"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/modules/contrib/nice_menus/js/jquery.hoverIntent.minified.js?v=0.5"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/modules/contrib/nice_menus/js/superfish.js?v=1.4.8"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/modules/contrib/nice_menus/js/nice_menus.js?v=1.0"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/libraries/jquery-hoverIntent/jquery.hoverIntent.js?v=r7"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/libraries/menu-drops/jquery.menu-drops.js?v=1"></script>
+<script type="text/javascript" src="https://use.typekit.net/qgf2hec.js?oemvs6"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/libraries/Typekit/typekit.js?oemvs6"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/libraries/jQuery.mmenu-master/dist/js/jquery.mmenu.min.js?v=5.6.2"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/modules/contrib/google_analytics/googleanalytics.js?oemvs6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1666649-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/themes/minim/js/dist/show-list.bundle.js?oemvs6"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/themes/minim/js/drop_menu.js?oemvs6"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/themes/minim/js/mmenu.js?oemvs6"></script>
+<script type="text/javascript" src="https://www.denveropenmedia.org/sites/all/themes/minim/js/search.js?oemvs6"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascripts/jsmediatags.min.js"></script>
+<script type="text/javascript" src="assets/public/app.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"minim","theme_token":"POwJfw3HRNNKxakpF_vdE4k1oTqPROyEPi7kVYBsEM0","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.bgiframe.min.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.hoverIntent.minified.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/libraries\/jquery-hoverIntent\/jquery.hoverIntent.js":1,"sites\/all\/libraries\/menu-drops\/jquery.menu-drops.js":1,"https:\/\/use.typekit.net\/qgf2hec.js":1,"sites\/all\/libraries\/Typekit\/typekit.js":1,"sites\/all\/libraries\/jQuery.mmenu-master\/dist\/js\/jquery.mmenu.min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/minim\/js\/dist\/show-list.bundle.js":1,"sites\/all\/themes\/minim\/js\/drop_menu.js":1,"sites\/all\/themes\/minim\/js\/mmenu.js":1,"sites\/all\/themes\/minim\/js\/search.js":1}},"nice_menus_options":{"delay":800,"speed":"slow"},"commerce_reservations":{"staff":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"urlIsAjaxTrusted":{"\/":true}});
+//--><!]]>
+</script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a1b9d408b0","applicationID":"1620899","transactionName":"NQABYEFZXBFSWhVeXQxKNkZaFx0LXV0ETxwSDRM=","queueTime":0,"applicationTime":24,"atts":"GUcCFglDTx8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+
+</html>

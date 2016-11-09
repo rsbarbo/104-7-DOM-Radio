@@ -45,6 +45,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
   <link rel="stylesheet" href="./assets/stylesheets/index.css" media="screen" title="no title">
   <link rel="stylesheet" href="assets/stylesheets/materialize.css" media="screen" title="no title">
   <link rel="stylesheet" href="assets/stylesheets/materialize.min.css" media="screen" title="no title">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body class="html front not-logged-in no-sidebars page-show-list add-featured-image-padding-blocks" >
@@ -94,106 +96,115 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
       <ul class="menu"><li class="first leaf"><a href="/" title="" class="active">Home</a></li>
         <li><a href="http://tunein.com/radio/KOMF-LP-1047-s271918/" title="" class="active" target="_blank">Live Stream 104.7</a><ul class="menu"></li>
         </ul>
-        <li class="expanded"><a href="https://www.denveropenmedia.org/membership" title="" target="_blank">Membership</a><ul class="menu" target="_blank"><li class="first leaf"><a href="https://www.denveropenmedia.org/membership" title="" target="_blank">Become a Member</a></li>
-          <li class="leaf"><a href="https://www.denveropenmedia.org/membership-and-content-agreement" target="_blank">Membership and Content Agreement</a></li>
-          <li class="last leaf"><a href="http://openmediafoundation.org/grants/grant-scholarship-applications/nonprofit-member-grant" target="_blank">Nonprofit Membership Grant</a></li>
+        <li><a href="https://www.denveropenmedia.org/membership" title="" target="_blank">Membership</a><ul class="menu" target="_blank"><li class="first leaf"><a href="https://www.denveropenmedia.org/membership" title="" target="_blank">Become a Member</a></li>
         </ul></li>
-        <li class="leaf om-menu-donate"><a href="https://www.denveropenmedia.org/donate" target="_blank">Donate</a></li>
-        <li class="last expanded om-menu-about"><a href="/about" title="Click here for a DOM Overview">About</a><ul class="menu"><li class="first leaf"><a href="/vision-open-media" title="Click here to read the vision of open media">The Vision</a></li>
-          <li class="leaf"><a href="/take-tour" title="Click here to take an OMF Tour!">Tour DOM/OMF</a></li>
-          <li class="leaf"><a href="http://omp.omfound.org" title="">OMPNet</a></li>
-          <li class="leaf"><a href="/open-music-sessions-performance-application">Open Music Sessions Application</a></li>
-          <li class="last leaf"><a href="/internships">Internships</a></li>
+        <li><a href="https://www.denveropenmedia.org/donate" target="_blank">Donate</a></li>
+        <li><a href="https://www.denveropenmedia.org/about" target="_blank" title="Click here for a DOM Overview">About</a><ul class="menu"><li class="first leaf"><a href="/vision-open-media" title="Click here to read the vision of open media">The Vision</a></li>
         </ul></li>
       </ul>
     </div>
   </div><!--#region-header-->
 
-<div class="region region-featured clearfix">
-  <div id="block-om-blocks-om-featured-image" class="block block-om-blocks" >
-    <div class="om-featured-caption">
-      <div class="om-featured-caption-your">YOUR</div>
-      <div class="om-featured-community"> <span>COMMUNITY</span> MEDIA CENTER</div>
-      <div class="om-featured-join">Join the community of media makers.</div>
-    </div>
-    <div class="video-wrapper-homepage">
-      <video style="width: 100% !important;  display: block;" preload="none" id="bgvid" autoplay="" loop="">
-        <source src="assets/Videos/dom_homepage_video.mp4" type="video/mp4">
-        </video>
+  <div class="region region-featured clearfix">
+    <div id="block-om-blocks-om-featured-image" class="block block-om-blocks" >
+      <div class="om-featured-caption">
+        <div class="om-featured-caption-your">YOUR</div>
+        <div class="om-featured-community"> <span>COMMUNITY</span> MEDIA CENTER</div>
+        <div class="om-featured-join">Join the community of media makers.</div>
       </div>
-    </div>
-    <div id="block-om-blocks-om-logo" class="block block-om-blocks" >
-      <a href="/"><img typeof="foaf:Image" src="assets/images/DOM-logo-banner.svg" alt="" /></a>
-    </div>
-
-    <!-- Upload file -->
-    <div id="block-om-blocks-om-above-content" class="block block-om-blocks" >
-      <form action="/ajax-upload" id="ajax-attachment-upload-form">
-        <div class="form-update" id="form-update">
-          <h5>Upload Your Song Here:</h5>
-        <input type="file" name="attachment" id="attachment" multiple />
-        <input type="text" name="album" placeholder="album" value="">
-        <input type="text" name="title" placeholder="title" value="">
-        <input type="text" name="artist" placeholder="artist" value="">
-        <input type="text" name="genre" placeholder="genre" value="">
-        <input type="text" name="email" placeholder="email" value="">
-        <!-- <input type="submit" value="Upload" /> -->
-        <button class="btn waves-effect red darken-4" type="submit" name="action" value="Upload">Submit</button>
-
+      <div class="video-wrapper-homepage">
+        <video style="width: 100% !important;  display: block;" preload="none" id="bgvid" autoplay="" loop="">
+          <source src="assets/Videos/dom_homepage_video.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-      </form>
-      <ul id="file-listing"></ul>
-    </div>
-
-    <div id="" class="block block-om-blocks" >
-      <div class="become-a-member clearfix">
-        <a href="/membership">
-          <div class="co-1"></div>
-          <div><span>BECOME A MEMBER</span>Access studios & equipment <br/>to create content for TV and radio. </div>
-        </a>
-        <a href="/classes">
-          <div class="co-2"></div>
-          <div><span>TAKE CLASSES</span>Get trained in cutting-edge media <br/>studios, equipment, and software. </div>
-        </a>
-        <a href="/equipment">
-          <div class="co-3"></div>
-          <div><span>RENT EQUIPMENT/FACILITIES</span>Rent state-of-the-art equipment <br/>& facilities for your media projects. </div>
-        </a>
-        <a href="/#watch/vote">
-          <div class="co-4"></div>
-          <div><span>WATCH, LISTEN AND VOTE</span>Denver's only TV & Radio stations <br/> created and programmed by you!<br/> More votes = more air time. </div>
-        </a>
+      <div id="block-om-blocks-om-logo" class="block block-om-blocks" >
+        <a href="/"><img typeof="foaf:Image" src="assets/images/DOM-logo-banner.svg" alt="" /></a>
       </div>
-    </div>
-  </div><!--#region-featured-->
-</header>
-<div class="region region-above-footer clearfix">
-  <div id="block-views-front-page-news-block" class="block block-views" >
-    <h2>News &amp; Events</h2>
-    <div class="view view-front-page-news view-id-front_page_news view-display-id-block view-dom-id-e40cf0cc7715823444cbeab08a6bb1bf">
-      <div class="view-content clearfix">
-        <div class='views-row views-row-1 views-row-odd views-row-first'><div class="om-front-page-news">
-          <a href="node/249981">
+
+      <!-- Upload file -->
+      <div id="block-om-blocks-om-above-content" class="block block-om-blocks" >
+      </div>
+
+      <div id="" class="block block-om-blocks" >
+        <div class="become-a-member clearfix">
+          <a href="https://www.denveropenmedia.org/membership" target="_blank">
+            <div><i class="large material-icons">perm_identity</i></div>
+            <div><span>BECOME A MEMBER</span>Access studios & equipment <br/>to create content for TV and radio. </div>
+          </a>
+          <a href="https://www.denveropenmedia.org/equipment" target="_blank">
+            <div><i class="large material-icons">videocam</i></div>
+            <div><span>RENT EQUIPMENT/FACILITIES</span>Rent state-of-the-art equipment <br/>& facilities for your media projects. </div>
+          </a>
+          <a href="https://www.denveropenmedia.org/#watch/vote" target="_blank">
+            <div><i class="large material-icons">forum</i></div>
+            <div><span>WATCH, LISTEN AND VOTE</span>Denver's only TV & Radio stations <br/> created and programmed by you!<br/> More votes = more air time. </div>
+          </a>
+          <a href="mp3-upload.html">
+            <div><i class="large material-icons">queue_music</i></div>
+            <div><span>UPLOAD YOUR SONG</span>Are you a local Artist? <br/> Go ahead and upload your song here!</div>
+          </a>
+        </div>
+      </div>
+    </div><!--#region-featured-->
+  </header>
+  <div class="region region-above-footer clearfix">
+    <div id="block-views-front-page-news-block" class="block block-views" >
+      <h2>News &amp; Events</h2>
+      <div class="view view-front-page-news view-id-front_page_news view-display-id-block view-dom-id-e40cf0cc7715823444cbeab08a6bb1bf">
+        <div class="view-content clearfix">
+          <div class='views-row views-row-1 views-row-odd views-row-first'><div class="om-front-page-news">
+            <a href="node/249981">
+              <div class="pod-outer">
+                <div class="pod-inner">
+                  <div class="om-view-image">
+                    <img typeof="foaf:Image" src="assets/images/default_image_for_thumbnail.png" width="290" height="165" alt="" />
+                  </div>
+                  <div class="om-view-title">
+                    Some Comment will go here...
+                  </div>
+                  <div class="om-view-time">
+                    (POST DATE)
+                  </div>
+                  <div class ="om-view-content">
+                    &#13;
+                    Additional Highlight&#13;
+                    &#13;
+                    &#13;
+                    (Interview Date)&#13;
+                    &#13;
+                    &#13;
+                    Additional Information about the post will go here...
+                  </div>
+                  <div class="om-view-read-more">
+                    Read More
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='views-row views-row-2 views-row-even'><div class="om-front-page-news">
+          <a href="node/249931">
             <div class="pod-outer">
               <div class="pod-inner">
                 <div class="om-view-image">
                   <img typeof="foaf:Image" src="assets/images/default_image_for_thumbnail.png" width="290" height="165" alt="" />
                 </div>
                 <div class="om-view-title">
-                  Some Comment will go here...
+                  Some Comment will go here..
                 </div>
                 <div class="om-view-time">
                   (POST DATE)
                 </div>
                 <div class ="om-view-content">
                   &#13;
-                  Additional Highlight&#13;
+                  Additional Highlight (Interview Date)
                   &#13;
                   &#13;
-                  (Interview Date)&#13;
+                  Additional Information about the post will go here...&#13;
                   &#13;
                   &#13;
-                  Additional Information about the post will go here...
                 </div>
                 <div class="om-view-read-more">
                   Read More
@@ -203,8 +214,9 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
           </a>
         </div>
       </div>
-      <div class='views-row views-row-2 views-row-even'><div class="om-front-page-news">
-        <a href="node/249931">
+
+      <div class='views-row views-row-3 views-row-odd views-row-last'><div class="om-front-page-news">
+        <a href="node/249696">
           <div class="pod-outer">
             <div class="pod-inner">
               <div class="om-view-image">
@@ -221,9 +233,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
                 Additional Highlight (Interview Date)
                 &#13;
                 &#13;
-                Additional Information about the post will go here...&#13;
                 &#13;
-                &#13;
+                Interview by Fast Forward, nonprofit technology accelerator progra
               </div>
               <div class="om-view-read-more">
                 Read More
@@ -234,37 +245,7 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
       </div>
     </div>
 
-    <div class='views-row views-row-3 views-row-odd views-row-last'><div class="om-front-page-news">
-      <a href="node/249696">
-        <div class="pod-outer">
-          <div class="pod-inner">
-            <div class="om-view-image">
-              <img typeof="foaf:Image" src="assets/images/default_image_for_thumbnail.png" width="290" height="165" alt="" />
-            </div>
-            <div class="om-view-title">
-              Some Comment will go here..
-            </div>
-            <div class="om-view-time">
-              (POST DATE)
-            </div>
-            <div class ="om-view-content">
-              &#13;
-              Additional Highlight (Interview Date)
-              &#13;
-              &#13;
-              &#13;
-              Interview by Fast Forward, nonprofit technology accelerator progra
-            </div>
-            <div class="om-view-read-more">
-              Read More
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
   </div>
-
-</div>
 </div>
 </div>
 
