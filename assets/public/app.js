@@ -1,8 +1,6 @@
 var jsmediatags = window.jsmediatags;
 var files = [];
 
-console.log("hi")
-
 function uploadHandler(path, status, xhr) {
   var file_parts = path.split(".");
   var extension = file_parts[file_parts.length - 1];
