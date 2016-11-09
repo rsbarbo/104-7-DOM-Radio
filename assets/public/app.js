@@ -14,6 +14,8 @@ function uploadHandler(path, status, xhr) {
 
 function fillForm(tag){
   $('#ajax-attachment-upload-form input[name="album"]').val(tag.tags.album);
+  $('#ajax-attachment-upload-form input[name="title"]').val(tag.tags.title);
+  $('#ajax-attachment-upload-form input[name="artist"]').val(tag.tags.artist);
   debugger;
 };
 
