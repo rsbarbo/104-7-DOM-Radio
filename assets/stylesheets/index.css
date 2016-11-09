@@ -1,3 +1,10 @@
 .dropfile {
   text-align: center;
 }
+
+.form-update {
+  border-radius: 80px;
+  border-width: medium;
+  padding-left: 300px;
+  padding-right: 300px;
+}
