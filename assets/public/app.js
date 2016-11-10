@@ -11,6 +11,9 @@ var onGetSuccess = function(data){
   if(data.id) {
     $('#file-listing').append('<p class="post" style="text-align: center; color:red;"><b>' + "Song: " + data.title + ", " + "posted to database"+ '</b></p>')
   }
+  setTimeout(function(){
+    document.getElementById("ajax-attachment-upload-form").reset();
+  },1000);
 };
 
 function uploadHandler(path, status, xhr) {
@@ -93,8 +96,5 @@ $(function(){
     .fail(onFail);
     files = [];
     form.preventDefault();
-    setTimeout(function(){
-      document.getElementById("ajax-attachment-upload-form").reset();
-    },3700);
   });
 });
