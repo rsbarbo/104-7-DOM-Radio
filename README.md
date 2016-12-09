@@ -9,6 +9,7 @@ This project is currently in progress
 * Login 
 * Become a member
 * Interact with radio staff and other members
+* You can access the project presentation here: [https://spark.adobe.com/page/fl45lM45hlYSj/]
 
 ```
 Raphael Barbo - November 2016
